@@ -1,11 +1,11 @@
--- drop tables if exist
+-- Drop tables if exist
 
 drop table if exists contacts;
 drop table if exists category;
 drop table if exists dsubcategory;
 drop table if exists campaign;
 
--- create contacts table and set our primary key
+-- Create contacts table and set primary key
 
 CREATE TABLE contacts (
     contact_id int NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE contacts (
 	primary key (contact_id)
 );
 
--- create category table and set our primary key
+-- Create category table and set primary key
 
 CREATE TABLE category (
     category_id varchar (150)   NOT NULL,
@@ -23,7 +23,7 @@ CREATE TABLE category (
 	primary key (category_id)
 );
 
--- create subcategory table and set our primary key
+-- Create subcategory table and set primary key
 
 CREATE TABLE subcategory (
     subcategory_id varchar (150)  NOT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE subcategory (
 	primary key (subcategory_id)
 );
 
--- create campaign table and set our primary key and foreign keys
+-- Create campaign table and set primary key and foreign keys
 
 CREATE TABLE campaign (
     cf_id int NOT NULL,
